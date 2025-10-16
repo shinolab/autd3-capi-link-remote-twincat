@@ -28,9 +28,9 @@ impl From<Timeouts> for autd3_link_twincat::remote::Timeouts {
 
 #[repr(u8)]
 pub enum SourceTag {
-    Auto,
-    Addr,
-    Request,
+    Auto = 0,
+    Addr = 1,
+    Request = 2,
 }
 
 #[repr(C)]
