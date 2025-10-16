@@ -51,7 +51,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           result-encoding: string
           script: |
-            return 'autd3-capi-link-ethercrab-'+context.payload.ref.replace(/refs\/tags\//, '')+'-${{ matrix.name }}-${{ matrix.arch }}';
+            return 'autd3-capi-link-remote-twincat-'+context.payload.ref.replace(/refs\/tags\//, '')+'-${{ matrix.name }}-${{ matrix.arch }}';
       
       - run: cargo make license
 
